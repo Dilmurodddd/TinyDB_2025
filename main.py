@@ -10,4 +10,9 @@ user = Document({
     'job': 'student'
 }, doc_id=10)
 
-db.insert(user)
+print(db.all())
+
+print(db.contains(doc_id=10))
+print(db.contains(doc_id=10))
+print(db.get(doc_id=10))
+print(db.get(doc_id=1))
