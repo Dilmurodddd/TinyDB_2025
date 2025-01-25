@@ -1,5 +1,10 @@
-import tinydb
+from tinydb import TinyDB
 
-# Get the version of the TinyDb Libirary
 
-print(tinydb.__version__)
+db = TinyDB("db.json")
+
+user = {
+    'lastname': 'Elmurodov','name': 'Ziyodullo', 'age': 20 , 'job': 'student'
+    }
+
+db.insert(user)
